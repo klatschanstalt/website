@@ -1,8 +1,8 @@
 # The URL the site will be built for
-title = "tr1x_em"
-description = "just my corner of internet"
-base_url = "https://trix.is-a.dev"
-author = "tr1x_em"
+title = "ham3l.cloud"
+description = "just a description"
+base_url = "https://ham3l.cloud"
+author = "ham3l"
 
 theme = "ametrine"
 compile_sass = true
@@ -47,15 +47,15 @@ categories = [
   { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
 ]
 
-issues_url = "https://github.com/tr1xem/website/issues/new"
-source_url = "https://github.com/tr1xem/website"
+issues_url = "https://github.com/klatschanstalt/website/issues/new"
+source_url = "https://github.com/klatschanstalt/website"
 show_copy_button = true
 show_reading_time = true
 show_backlinks = true
 date_format = "%d %B %Y"
 date_format_long = "%d %B %Y, %R (%Z)"
-date_locale = "en_IN"
-timezone = "Asia/Kolkata"
+date_locale = "de_DE"
+timezone = "Europe/Berlin"
 show_comments_qr = true
 csp = [
   { directive = "font-src", domains = [
@@ -118,22 +118,22 @@ links = [
 
   ] },
     { name = "Intresting ", category = [
-		{ url = "https://github.com/tr1xem", name = "Github", icon = "github-logo" },
+		{ url = "https://github.com/klatschanstalt", name = "Github", icon = "github-logo" },
 		{ url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
 	] },
 ]
 
 [extra.footer]
 # copyright = true
-copyright = "© tr1x_em, 2021-$YEAR"
+copyright = "© ham3l.cloud, 2021-$YEAR"
 show_timestamp = true
 show_powered_by = true
 socials = [
-    { url = "https://discord.com/users/885063317079592961", icon = "discord" },
-    { url = "https://github.com/tr1xem", icon = "github" },
-    { url = "https://reddit.com/u/l_lawliet_9999", icon = "reddit" },
-    { url = "https://x.com/tr1x_em", icon = "x" },
-    { url = "mailto:admin@trix.is-a.dev", icon = "gmail" },
+    { url = "https://discord.com/users/885063317079592960", icon = "discord" },
+    { url = "https://github.com/klatschanstalt", icon = "github" },
+    { url = "https://reddit.com/u/klatschanstalt", icon = "reddit" },
+    { url = "https://x.com/klatschanstalt", icon = "x" },
+    { url = "mailto:admin@ham3l.cloud", icon = "gmail" },
 ]
 
 [extra.debug]
