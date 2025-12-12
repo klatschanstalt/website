@@ -40,7 +40,7 @@ about_page = "/pages/ueber-mich/"
 
 ## Über mich (Vorschau)
 
-{% set about_page = get_page(path="pages/ueber-mich/_index.md") %}
+{% set about_page = get_page(path="pages/ueber-mich") %}
 
 <div id="ueber-mich-preview">
   <!-- Vorschau: erste 250 Zeichen -->
@@ -55,22 +55,22 @@ about_page = "/pages/ueber-mich/"
 
 <ul class="masonry">
 
-<!-- Card Start -->
-<li>
-  <article>
-    **Seit vielen Jahren beschäftige ich mich mit digitalen Technologien,** derzeit konzentriere ich mich auf <abbr id="project" title="ein spezielles Entwicklungsprojekt">innovative Softwarelösungen</abbr>. Mein Ziel ist es, Prozesse zu optimieren und nachhaltige Ergebnisse zu erzielen.
-  </article>
-</li>
-<!-- Card End -->
+  <!-- Card Start -->
+  <li>
+    <article>
+      **Seit vielen Jahren beschäftige ich mich mit digitalen Technologien,** derzeit konzentriere ich mich auf <abbr id="project" title="ein spezielles Entwicklungsprojekt">innovative Softwarelösungen</abbr>. Mein Ziel ist es, Prozesse zu optimieren und nachhaltige Ergebnisse zu erzielen.
+    </article>
+  </li>
+  <!-- Card End -->
 
-<!-- Card Start -->
-<li>
-  <article>
-    > "Wenn es sich lohnt, etwas zu bauen, lohnt es sich auch, es zu teilen. Echte Innovatoren stellen ihre Projekte online und lassen die Community daran wachsen."
-    > _~Ham3L_
-  </article>
-</li>
-<!-- Card End -->
+  <!-- Card Start -->
+  <li>
+    <article>
+      > "Wenn es sich lohnt, etwas zu bauen, lohnt es sich auch, es zu teilen. Echte Innovatoren stellen ihre Projekte online und lassen die Community daran wachsen."
+      > _~Ham3L_
+    </article>
+  </li>
+  <!-- Card End -->
 
 </ul>
 
