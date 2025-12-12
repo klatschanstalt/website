@@ -1,11 +1,3 @@
-# Build output
-#public/
-#_site/
-
-# Backup files
-*.bak
-*.old
-
-# IDE
-.vscode/
-.idea/
+public/
+*.log
+.DS_Store
