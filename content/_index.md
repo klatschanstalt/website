@@ -4,14 +4,12 @@ description = "die Zentrale"
 [extra]
 no_header = true
 styles = ["home/style.css"]
-[extra.links]
-about_page = "/pages/ueber-mich/"
 +++
 
 <div class="container-fill">
 
   <div>
-    {{ poloroid() }}
+    {{ polaroid() }}
 
     <div id="title">
       ham3l.CLOUD
@@ -40,15 +38,19 @@ about_page = "/pages/ueber-mich/"
 
 ## Über mich (Vorschau)
 
-{% set about_page = get_page(path="pages/ueber-mich") %}
+{% set about_page = get_page(path="pages/ueber-mich/_index.md") %}
 
 <div id="ueber-mich-preview">
-  <!-- Vorschau: erste 250 Zeichen -->
-  {{ about_page.content | truncate(250, "…") | safe }}
+  {% if about_page %}
+    <!-- Vorschau: erste 250 Zeichen -->
+    {{ about_page.content | truncate(250, "…") | safe }}
 
-  <br><br>
-  <!-- Interner Link für Zola -->
-  <a href="{{ page.extra.links.about_page }}" class="suggested button">Mehr über mich →</a>
+    <br><br>
+    <!-- Interner Link für Zola -->
+    <a href="{{ about_page.permalink }}" class="suggested button">Mehr über mich →</a>
+  {% else %}
+    <p>Die Seite „Über mich“ konnte nicht gefunden werden.</p>
+  {% endif %}
 </div>
 
 ---
