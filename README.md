@@ -1,6 +1,6 @@
 # Personal Website powered by Zola
 
-Hosted at: https://trix.is-a.dev/
+Hosted at: https://ham3l.cloud/
 
 # Preview
 
