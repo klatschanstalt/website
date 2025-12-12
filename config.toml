@@ -108,26 +108,23 @@ card = "banner.png"
 
 [extra.nav]
 icon = "logo.png"
-# Usage of an icon is heavily adviced. In case if none is provided, first two
-# letters of the link name will be used instead.
-# Any icon name from https://phosphoricons.com can be used.
 links = [
   { name = "Writing", category = [
     { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
-
+    { url = "@/pages/ueber-mich", name = "Über mich", icon = "user" }   # <-- Neu
   ] },
-    { name = "Intresting ", category = [
-		{ url = "https://github.com/klatschanstalt", name = "Github", icon = "github-logo" },
-		{ url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
-	] },
+  { name = "Intresting", category = [
+    { url = "https://github.com/klatschanstalt", name = "Github", icon = "github-logo" },
+    { url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
+  ] },
 ]
 
 [extra.footer]
-# copyright = true
+# copyright = false
 copyright = "© ham3l.cloud, 2021-$YEAR"
-show_timestamp = true
-show_powered_by = true
+show_timestamp = false
+show_powered_by = false
 socials = [
     { url = "https://discord.com/users/885063317079592960", icon = "discord" },
     { url = "https://github.com/klatschanstalt", icon = "github" },

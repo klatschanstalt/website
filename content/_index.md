@@ -1,10 +1,11 @@
 +++
-title = "Home"
-description = "The central hub."
+title = "Startseite"
+description = "die Zentrale"
 [extra]
 no_header = true
 styles = ["home/style.css"]
-
+[extra.links]
+about_page = "/pages/ueber-mich/"
 +++
 
 <div class="container-fill">
@@ -13,50 +14,51 @@ styles = ["home/style.css"]
 {{ poloroid() }}
 
 <div id="title">
-
-tr1x_em
-
+ham3l.CLOUD
 </div>
-Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; tr1x_em.
+
+# 🌐 Hallo und willkommen in meinem digitalen Labor
+
+Ein Ort, an dem ich **neue Ideen teste** und **digitale Lösungen entwickle**.  
+Online kennt man mich als **`Ham3L`** _(Mein Nutzername auf verschiedenen Plattformen)_.
+
+> 💡 Tipp: Bleib neugierig und probiere Neues aus!
+
+---
+
+✨ **Fun Fact:** Kleine Experimente führen oft zu den besten Lösungen!  
+🔹 Tools, Tipps und Tricks findest du hier direkt in meinem digitalen Labor.
 
 <div class="buttons start big">
-  <a href="#about" class="suggested">About Me ↓</a>
-  <a href="#splash">Splash →</a>
+  <a href="#ueber-mich-preview" class="suggested button scroll-to">Über mich ↓</a>
+  <a href="#splash" class="suggested button scroll-to">Splash →</a>
 </div>
 </div>
 </div>
 
-## About
+---
 
-Tf do i write in this? i feel like i dont know about me
+## Über mich (Vorschau)
+
+{% set about_page = get_page(path="pages/ueber-mich") %}
+
+<div id="ueber-mich-preview">
+  <!-- Vorschau: erste 250 Zeichen -->
+  {{ about_page.content | truncate(250, "…") | safe }}
+
+  <br><br>
+  <!-- Echter interner Link für Zola -->
+  <a href="{{ page.extra.links.about_page }}" class="suggested button">Mehr über mich →</a>
+</div>
+
+---
 
 <ul class="masonry">
 
 <!-- Card Start -->
 <li>
 <article>
-
-**I'm originating from India,** currently residing in <abbr id="hill" title="If you know, you know">mountain valley</abbr>. That means that I'm a native hindi speaker, कर भला तो हो भला।
-
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article class="fancy-list">
-
-**Random things I like:**
-
-- Cyan <small>(its just peaceful)</small>
-- Tokyonight <small>(the best the theme ngl)</small>
-- Photography and editing <small>(amature)</small>
-- Neovim <small>(the superior text editor)</small>
-- Souls like game <small>(cuz they are tough?)</small>
-- Meeting with new people :>
-- Loves anime <small>([Anilist](https://anilist.co/user/tr1xem/))</small>
-- Rasgulla <small>([Wikipedia](https://en.wikipedia.org/wiki/Rasgulla))</small>
-
+**Seit vielen Jahren beschäftige ich mich mit digitalen Technologien,** derzeit konzentriere ich mich auf <abbr id="project" title="ein spezielles Entwicklungsprojekt">innovative Softwarelösungen</abbr>. Mein Ziel ist es, Prozesse zu optimieren und nachhaltige Ergebnisse zu erzielen.
 </article>
 </li>
 <!-- Card End -->
@@ -64,15 +66,14 @@ Tf do i write in this? i feel like i dont know about me
 <!-- Card Start -->
 <li>
 <article>
-
-> "Only wimps use tape backup. REAL men just upload their important stuff on ftp and let the rest of the world mirror it."
-> _~Linus_ _Torvalds_
-
+> "Wenn es sich lohnt, etwas zu bauen, lohnt es sich auch, es zu teilen. Echte Innovatoren stellen ihre Projekte online und lassen die Community daran wachsen."
+> _~Ham3L_
 </article>
 </li>
 <!-- Card End -->
+
 </ul>
 
 > [!NOTE]
-> Still in WIP!
-> Read [blogs](@/blog/_index.md) till then
+> Noch in Arbeit!  
+> Schau bald wieder vorbei für Updates und Einblicke aus meinem digitalen Labor.
