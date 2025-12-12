@@ -1,6 +1,6 @@
 # Build output
-public/
-_site/
+#public/
+#_site/
 
 # Backup files
 *.bak
