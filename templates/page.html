@@ -1,9 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ page.title }}</title>
-</head>
-<body>
-    {{ page.content }}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+
+{# Header nur anzeigen, wenn nicht explizit ausgeschaltet #}
+{%- if page is defined and not page.extra.no_header -%}
+    <h1>{{ page.title }}</h1>
+{%- elif section is defined and not section.extra.no_header -%}
+    <h1>{{ section.title }}</h1>
+{%- endif -%}
+
+{%- include "partials/statements.html" -%}
+
+{# Inhalt ausgeben: page oder section #}
+{% if page is defined %}
+    {{ page.content | safe }}
+{% elif section is defined %}
+    {{ section.content | safe }}
+{% endif %}
+
+{# Backlinks nur für Seiten, die sie haben #}
+{%- if page is defined and page.extra.backlinks -%}
+    {%- include "partials/backlinks.html" -%}
+{%- endif -%}
+
+{% endblock content %}

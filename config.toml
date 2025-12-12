@@ -110,13 +110,13 @@ card = "banner.png"
 icon = "logo.png"
 links = [
   { name = "Writing", category = [
-    { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
-    { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
-    { url = "@/pages/ueber-mich", name = "Über mich", icon = "user" }   # <-- Neu
+    { url = "/blog/", name = "Blog", icon = "newspaper-clipping" },
+    { url = "/nanolog/", name = "Nanolog", icon = "note-pencil" },
+    { url = "/pages/ueber-mich/", name = "Über mich", icon = "user" }   # <-- Neu
   ] },
   { name = "Intresting", category = [
     { url = "https://github.com/klatschanstalt", name = "Github", icon = "github-logo" },
-    { url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
+    { url = "/blog/2025-09-22-coding-principles/", name = "Coding Principles", icon = "code" },
   ] },
 ]
 
